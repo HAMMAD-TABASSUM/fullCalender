@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Section</title>
+    <link rel="stylesheet" href="week.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <div class="basic-container">
+        <div class="event-container">
+            <h1>DEMO</h1>
+            <div class="events">
+                <p>drag these into the calendar</p>
+                <p class="event" draggable="true">Event 1</p>
+            </div>
+        </div>
+
+
+        <!---------------------- CONTAINER ---------------------->
+
+
+        <div class="container">
+            <div class="calendar-btns">
+
+                <!----------- LEFT BTNS ------------->
+
+                <div class="left-btns">
+                    <div class="prev-next-btns">
+                        <button type="button" class="previous"><i class="fa fa-chevron-left"></i></button>
+                        <button type="button" class="next"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="today">
+                        <button type="button" class="today-btn">today</button>
+                    </div>
+                </div>
+
+                <!----------- MONTH YEAR ------------->
+
+                <div class="month-year">
+                    <div class="month-title"></div>
+                    <div class="week-title-s"></div> -
+                    <div class="week-title-e"></div>,
+                    <div class="year-title"></div>
+                </div>
+
+                <!------------ RIGHT BTNS ----------->
+
+                <div class="right-btns">
+                    <button type="button" class="btn-mnth">month</button>
+                    <button type="button" class="btn-week">week</button>
+                    <button type="button" class="btn-day">day</button>
+                    <button type="button" class="btn-list">list</button>
+                </div>
+            </div>
+
+            <!------------------------------- WEEK SEC ----------------------------->
+
+
+            <div class="week d-none">
+                <div class="row">
+                    <div class="column-time">
+                        <div style="height: 25px;"></div>
+                        <div>all-day</div>
+                        <div>12am</div>
+                        <div>1am</div>
+                        <div>2am</div>
+                        <div>3am</div>
+                        <div>4am</div>
+                        <div>5am</div>
+                        <div>6am</div>
+                        <div>7am</div>
+                        <div>8am</div>
+                        <div>9am</div>
+                        <div>10am</div>
+                        <div>11am</div>
+                        <div>12pm</div>
+                        <div>1pm</div>
+                        <div>2pm</div>
+                        <div>3pm</div>
+                        <div>4pm</div>
+                        <div>5pm</div>
+                        <div>6pm</div>
+                        <div>7pm</div>
+                        <div>8pm</div>
+                        <div>9pm</div>
+                        <div>10pm</div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Sun
+                            <p class="mnth"></p>
+                            <p class="dt"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Mon
+                            <p class="mnth2"></p>
+                            <p class="dt2"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Tue
+                            <p class="mnth3"></p>
+                            <p class="dt3"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Wed
+                            <p class="mnth4"></p>
+                            <p class="dt4"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Thu
+                            <p class="mnth5"></p>
+                            <p class="dt5"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="column active">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Fri
+                            <p class="mnth6"></p>
+                            <p class="dt6"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Sat
+                            <p class="mnth7"></p>
+                            <p class="dt7"></p>
+                        </div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="week.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="month.css">
+    <link rel="stylesheet" href="week.css">
+    <link rel="stylesheet" href="day.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <!------------------------- EVENT CONTAINER -------------------------->
+
+    <div class="basic-container">
+        <div class="event-container list-display">
+            <h1>DEMO</h1>
+            <div class="events">
+                <p>Drag these into the calendar</p>
+                <p class="event d-event" id="event" draggable="true">Event 1</p>
+            </div>
+        </div>
+
+
+        <!------------------- MONTH TOP -------------------->
+
+
+
+        <div class="container m-cntnr">
+            <div class="calendar-btns">
+
+                <!----------- LEFT BTNS ------------->
+
+                <div class="left-btns">
+                    <div class="prev-next-btns">
+                        <button type="button" class="prev-btn"><i class="fa fa-chevron-left"></i></button>
+                        <button type="button" class="next-btn"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="today">
+                        <button type="button" class="today-btn">today</button>
+                    </div>
+                </div>
+
+                <!----------- MONTH YEAR ------------->
+
+                <div class="month-year">
+                    <div class="month-title"></div>
+                    <div class="year-title"></div>
+                </div>
+
+                <!------------ RIGHT BTNS ----------->
+
+                <div class="right-btns">
+                    <button type="button" class="month-btn-mnth">month</button>
+                    <button type="button" class="month-btn-week" id="month-btn-week">week</button>
+                    <button type="button" class="month-btn-day" id="month-btn-day">day</button>
+                    <button type="button" class="month-btn-list" id="month-btn-list">list</button>
+                </div>
+            </div>
+
+
+            <!-------------------------- MONTH ------------------------------->
+
+
+
+            <div class="month">
+                <div class="month_days">
+                    <div class="md">Sun</div>
+                    <div class="md">Mon</div>
+                    <div class="md">Tue</div>
+                    <div class="md">Wed</div>
+                    <div class="md">Thu</div>
+                    <div class="md">Fri</div>
+                    <div class="md">Sat</div>
+                </div>
+                <div class="date" id="date"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!------------------------------------- WEEK -------------------------------------->
+
+
+
+
+
+
+
+        <div class="wk-container d-none wk-cntnr">
+            <div class="calendar-btns">
+
+                <!----------- LEFT BTNS ------------->
+
+                <div class="left-btns">
+                    <div class="prev-next-btns">
+                        <button type="button" class="wk-previous"><i class="fa fa-chevron-left"></i></button>
+                        <button type="button" class="wk-next"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="today">
+                        <button type="button" class="wk-today-btn">today</button>
+                    </div>
+                </div>
+
+                <!----------- MONTH YEAR ------------->
+
+                <div class="month-year">
+                    <div class="wk-month-title"></div>
+                    <div class="week-title-s"></div> -
+                    <div class="week-title-e"></div>,
+                    <div class="wk-year-title"></div>
+                </div>
+
+                <!------------ RIGHT BTNS ----------->
+
+                <div class="right-btns">
+                    <div class="right-btns">
+                        <button type="button" class="week-btn-mnth" id="week-mnth-btn">month</button>
+                        <button type="button" class="week-btn-week">week</button>
+                        <button type="button" class="week-btn-day" id="week-day-btn">day</button>
+                        <button type="button" class="week-btn-list" id="week-list-btn">list</button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------- WEEK SEC ----------------------------->
+
+
+            <div class="week">
+                <div class="row">
+                    <div class="column-time">
+                        <div style="height: 25px;"></div>
+                        <div>all-day</div>
+                        <div>12am</div>
+                        <div>1am</div>
+                        <div>2am</div>
+                        <div>3am</div>
+                        <div>4am</div>
+                        <div>5am</div>
+                        <div>6am</div>
+                        <div>7am</div>
+                        <div>8am</div>
+                        <div>9am</div>
+                        <div>10am</div>
+                        <div>11am</div>
+                        <div>12pm</div>
+                        <div>1pm</div>
+                        <div>2pm</div>
+                        <div>3pm</div>
+                        <div>4pm</div>
+                        <div>5pm</div>
+                        <div>6pm</div>
+                        <div>7pm</div>
+                        <div>8pm</div>
+                        <div>9pm</div>
+                        <div>10pm</div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Sun
+                            <p class="mnth"></p>
+                        </div>
+                        <div class="date sun_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Mon
+                            <p class="mnth2"></p>
+                        </div>
+                        <div class="date mon_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Tue
+                            <p class="mnth3"></p>
+                        </div>
+                        <div class="date tue_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Wed
+                            <p class="mnth4"></p>
+                        </div>
+                        <div class="date wed_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Thu
+                            <p class="mnth5"></p>
+                        </div>
+                        <div class="date thu_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Fri
+                            <p class="mnth6"></p>
+                        </div>
+                        <div class="date fri_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="column">
+                        <div class="abc" style="height: 25px; width: 127.5px;">Sat
+                            <p class="mnth7"></p>
+                        </div>
+                        <div class="date sat_event"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                        <div class="date"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!------------------------------------ DAY SEC -------------------------------------->
+
+
+
+
+
+
+
+
+        <div class="full-calendar  d-none day-cntnr">
+            <div class="calendar-container">
+
+                <!-- ------------- CALENDAR ---------------->
+                <div class="calendar">
+                    <div class="calendar-btns">
+
+
+                        <div class="left-btns">
+                            <div class="prev-next-btns">
+                                <button type="button" class="d-previous btn"><i class="fa fa-chevron-left"></i></button>
+                                <button type="button" class="d-next btn"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                            <div class="today-btn">
+                                <button type="button" id="today-d-b" class="t-d-d-btn">today</button>
+                            </div>
+                        </div>
+
+                        <div class="month-title">
+                            <div class="d-mnth"></div>
+                            <div class="d-date"></div> -
+                            <div class="d-year"></div>
+                        </div>
+
+                        <div class="right-btns">
+                            <button type="button" class="day-btn-mnth" id="day-mnth-btn">month</button>
+                            <button type="button" class="day-btn-week" id="day-week-btn">week</button>
+                            <button type="button" class="day-btn-day">day</button>
+                            <button type="button" class="day-btn-list" id="day-list-btn">list</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------- DAY --------------->
+
+            <div class="day">
+                <div class="day-container">
+                    <div class="day-row">
+                        <div></div>
+                        <div class="active-day"></div>
+                    </div>
+                    <div class="day-columns">
+                        <div class="day-column">
+                            <div>all day</div>
+                            <div>12am</div>
+                            <div>1am</div>
+                            <div>2am</div>
+                            <div>3am</div>
+                            <div>4am</div>
+                            <div>5am</div>
+                            <div>6am</div>
+                            <div>7am</div>
+                            <div>8am</div>
+                            <div>9am</div>
+                            <div>10am</div>
+                            <div>11am</div>
+                            <div>12pm</div>
+                            <div>1pm</div>
+                            <div>2pm</div>
+                            <div>3pm</div>
+                            <div>4pm</div>
+                            <div>5pm</div>
+                            <div>6pm</div>
+                            <div>7pm</div>
+                            <div>8pm</div>
+                            <div>9pm</div>
+                            <div>10pm</div>
+                            <div>11pm</div>
+                        </div>
+                        <div class="empty-column">
+                            <div class="date day_event"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                            <div class="date"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!----------------------------------- LIST ------------------------------------>
+
+
+
+
+
+
+
+
+        <div class="l-container d-none l-cntnr">
+            <div class="calendar-btns">
+
+                <!----------- LEFT BTNS ------------->
+
+                <div class="left-btns">
+                    <div class="prev-next-btns">
+                        <button type="button" class="prev-btn"><i class="fa fa-chevron-left"></i></button>
+                        <button type="button" class="next-btn"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="today">
+                        <button type="button" class="today-btn">today</button>
+                    </div>
+                </div>
+
+                <!----------- MONTH YEAR ------------->
+
+                <div class="month-year">
+                    <div class="month-title"></div>
+                    <div class="year-title"></div>
+                </div>
+
+                <!------------ RIGHT BTNS ----------->
+
+                <div class="right-btns">
+                    <button type="button" class="list-btn-mnth" id="list-mnth-bttn">month</button>
+                    <button type="button" class="list-btn-week" id="list-week-bttn">week</button>
+                    <button type="button" class="list-btn-day" id="list-day-bttn">day</button>
+                    <button type="button" class="list-btn-list">list</button>
+                </div>
+            </div>
+
+
+
+            <!-------------------------- LIST SEC ---------------------------->
+
+
+
+            <div class="list">
+                <div class="list-container">
+                    <div class="lists">
+                        <div class="list-1">
+                            <p>Sunday</p>
+                            <p class="date">March 13, 2022</p>
+                        </div>
+                        <div class="list-2">
+                            <p>all-day</p>
+                            <div class="conference">
+                                <div></div>
+                                <p>Conference</p>
+                            </div>
+                        </div>
+                        <div class="list-3">
+                            <p>Monday</p>
+                            <p>March 14, 2022</p>
+                        </div>
+                        <div class="list-4">
+                            <p>all-day</p>
+                            <div class="conference">
+                                <div></div>
+                                <p>Conference</p>
+                            </div>
+                        </div>
+                        <div class="list-5">
+                            <p>11:30am-12:30pm</p>
+                            <div class="metting">
+                                <div></div>
+                                <p>Metting</p>
+                            </div>
+                        </div>
+                        <div class="list-6">
+                            <p>12:00pm</p>
+                            <div class="lunch">
+                                <div></div>
+                                <p>Lunch</p>
+                            </div>
+                        </div>
+                        <div class="list-7">
+                            <p>02:30pm</p>
+                            <div class="metting-2">
+                                <div></div>
+                                <p>Metting</p>
+                            </div>
+                        </div>
+                        <div class="list-8">
+                            <p>05:30pm</p>
+                            <div class="hour">
+                                <div></div>
+                                <p>Happy Hour</p>
+                            </div>
+                        </div>
+                        <div class="list-9">
+                            <p>08:30pm</p>
+                            <div class="dinner">
+                                <div></div>
+                                <p>Dinner</p>
+                            </div>
+                        </div>
+                        <div class="list-10">
+                            <p>Tuesday</p>
+                            <p class="date">March 15, 2022</p>
+                        </div>
+                        <div class="list-11">
+                            <p>07:00am</p>
+                            <div class="bday">
+                                <div></div>
+                                <p>Birthday Party</p>
+                            </div>
+                        </div>
+                        <div class="list-12">
+                            <p>Wednesday</p>
+                            <p class="date">March 16, 2022</p>
+                        </div>
+                        <div class="list-13">
+                            <p>04:00pm</p>
+                            <div class="repeating">
+                                <div></div>
+                                <p>Reapiting Party</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="month.js"></script>
+    <script src="week.js"></script>
+    <!-- <script src="day.js"></script> -->
+
+</body>
+
+</html>

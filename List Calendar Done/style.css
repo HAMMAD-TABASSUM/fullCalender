@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/************************** CALENDAR BTNS **************************/
+
+
+
+
+
+.container .calendar-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.left-btns .prev-next-btns {
+    display: flex;
+}
+.calendar-btns .left-btns {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.today .today-btn {
+    padding: 8px 14px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev-next-btns .prev-btn,
+.prev-next-btns .next-btn {
+    padding: 10px 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-next-btns .prev-btn:hover,
+.prev-next-btns .next-btn:hover,
+.today .today-btn:hover {
+    background-color: black;
+}
+
+.prev-next-btns .prev-btn {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.prev-next-btns .next-btn {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.calendar-btns .right-btns {
+    display: flex;
+}
+.right-btns .btn-mnth,
+.right-btns .btn-week,
+.right-btns .btn-day,
+.right-btns .btn-list {
+    padding: 8px 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.right-btns .btn-mnth:hover,
+.right-btns .btn-week:hover,
+.right-btns .btn-day:hover,
+.right-btns .btn-list:hover {
+    background-color: black;
+}
+.right-btns .btn-mnth {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.right-btns .btn-list {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+/*********************** CALENDAAR TOP **************************/
+
+
+
+
+
+.month-year {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.month .month_days {
+    display: flex;
+}
+.month_days div {
+    border: 1px solid lightgray;
+    width: 167px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+
+
+
+
+/******************************* LIST SEC ******************************/
+
+
+
+
+
+
+.list .list-container {
+    height: 80vh;
+    border: 1px solid gray;
+    position: absolute;
+    top: 14%;
+    left: 6.8%;
+    border-top: none;
+}
+
+.list .list-1,
+.list .list-3,
+.list .list-10,
+.list .list-12 {
+    width: 1165px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(241, 240, 240);
+    border-top: 1px solid rgb(107, 106, 106);
+}
+
+.list-1 p,
+.list-3 p,
+.list-10 p,
+.list-12 p {
+    cursor: pointer;
+}
+
+.list .list-2,
+.list .list-4,
+.list .list-6,
+.list .list-7,
+.list .list-8,
+.list .list-9,
+.list .list-11,
+.list .list-13 {
+    display: flex;
+    gap: 100px;
+    width: 1165px;
+    padding: 5px 10px;
+    border-top: 1px solid rgb(107, 106, 106);
+}
+
+.list .list-6,
+.list .list-7,
+.list .list-8,
+.list .list-9,
+.list .list-11,
+.list .list-13 {
+    display: flex;
+    gap: 88px;
+}
+
+.list .list-5 {
+    display: flex;
+    gap: 26.5px;
+    width: 1168px;
+    padding: 5px 10px;
+    border-top: 1px solid rgb(107, 106, 106);
+}
+
+.list-2:hover,
+.list-4:hover,
+.list-5:hover,
+.list-6:hover,
+.list-7:hover,
+.list-8:hover,
+.list-9:hover,
+.list-11:hover,
+.list-13:hover {
+    background-color: rgb(241, 240, 240);
+}
+
+.list-2 .conference,
+.list-4 .conference,
+.list-5 .metting,
+.list-6 .lunch,
+.list-7 .metting-2,
+.list-8 .hour,
+.list-9 .dinner,
+.list-11 .bday,
+.list-13 .repeating {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.conference div,
+.metting div,
+.lunch div,
+.metting-2 div,
+.hour div,
+.dinner div,
+.bday div,
+.repeating div {
+    background-color: dodgerblue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.conference p,
+.metting p,
+.lunch p,
+.metting-2 p,
+.hour p,
+.dinner p,
+.bday p,
+.repeating p {
+    cursor: pointer;
+}

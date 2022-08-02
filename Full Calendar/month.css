@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 955px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/************************* BASIC CONTAINER **************************/
+
+
+.basic-container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.event-container .events {
+    width: 200px;
+    background-color: black;
+    padding: 12px 8px;
+    border-radius: 10px;
+}
+.event-container h1 {
+    margin-top: 38px;
+    font-family: sans-serif;
+}
+
+.events p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.events .event {
+    background-color: dodgerblue;
+    color: white;
+    padding: 3px 8px 3px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/************************** CALENDAR BTNS **************************/
+
+
+
+
+
+.container .calendar-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.left-btns .prev-next-btns {
+    display: flex;
+}
+.calendar-btns .left-btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.today .today-btn {
+    padding: 8px 14px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev-next-btns .prev-btn,
+.prev-next-btns .next-btn {
+    padding: 10px 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-next-btns .prev-btn:hover,
+.prev-next-btns .next-btn:hover,
+.today .today-btn:hover {
+    background-color: black;
+}
+
+.prev-next-btns .prev-btn {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.prev-next-btns .next-btn {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.calendar-btns .right-btns {
+    display: flex;
+}
+.right-btns .month-btn-mnth,
+.right-btns .month-btn-week,
+.right-btns .month-btn-day,
+.right-btns .month-btn-list {
+    padding: 8px 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.right-btns .month-btn-mnth:hover,
+.right-btns .month-btn-week:hover,
+.right-btns .month-btn-day:hover,
+.right-btns .month-btn-list:hover {
+    background-color: black;
+}
+.right-btns .month-btn-mnth {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.right-btns .month-btn-list {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+/*********************** CALENDAAR TOP **************************/
+
+
+
+
+
+.month-year {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.month .month_days {
+    display: flex;
+}
+.month_days .md {
+    border: 1px solid lightgray;
+    width: 136px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+
+
+
+
+/************************ MONTH ***********************/
+
+
+
+
+
+.date {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date .cur {
+    text-align: right;
+    width: 136px;
+    height: 100px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.prev_date,
+.next_date {
+    color: lightgrey;
+    text-align: right;
+    width: 136px;
+    height: 100px;
+    border: 1px solid lightgray;
+    padding: 5px;
+    /* cursor: no-drop; */
+}
+
+.active {
+    background-color: rgb(255, 228, 232);
+}
+.d-none {
+    display: none;
+}
+
+
+
+
+
+
+
+/* JAVASCRIPT */
+
+
+
+
+
+
+
+
+
+/* .hold {
+    border: solid red 4px;
+}
+.hide {
+    display: none;
+} */
+p.event {
+    background-color: dodgerblue;
+    color: white;
+    padding: 3px 8px 3px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}

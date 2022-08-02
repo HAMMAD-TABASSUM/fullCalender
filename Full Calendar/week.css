@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wk-container {
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/************************* BASIC CONTAINER **************************/
+
+
+.basic-container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.event-container .events {
+    width: 200px;
+    background-color: black;
+    padding: 12px 8px;
+    border-radius: 10px;
+}
+.event-container h1 {
+    margin-top: 38px;
+    font-family: sans-serif;
+}
+
+.events p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.events .event {
+    background-color: dodgerblue;
+    color: white;
+    padding: 3px 8px 3px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+/************************** CALENDAR BTNS **************************/
+
+
+
+
+
+.wk-container .calendar-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.left-btns .prev-next-btns {
+    display: flex;
+}
+.calendar-btns .left-btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.today .wk-today-btn {
+    padding: 8px 14px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev-next-btns .wk-previous,
+.prev-next-btns .wk-next {
+    padding: 10px 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-next-btns .wk-previous:hover,
+.prev-next-btns .wk-next:hover,
+.today .wk-today-btn:hover {
+    background-color: black;
+}
+
+.prev-next-btns .wk-previous {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.prev-next-btns .wk-next {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.calendar-btns .right-btns {
+    display: flex;
+}
+.right-btns .week-btn-mnth,
+.right-btns .week-btn-week,
+.right-btns .week-btn-day,
+.right-btns .week-btn-list {
+    padding: 8px 14px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.right-btns .week-btn-mnth:hover,
+.right-btns .week-btn-week:hover,
+.right-btns .week-btn-day:hover,
+.right-btns .week-btn-list:hover {
+    background-color: black;
+}
+.right-btns .week-btn-mnth {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.right-btns .week-btn-list {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+
+
+
+/***************************** MONTH YEAR ****************************/
+
+
+
+.calendar-btns .month-year {
+    display: flex;
+    gap: 5px;
+    font-size: 30px;
+    align-items: center;
+}
+
+
+
+
+/******************************* WEEK SEC ******************************/
+
+
+
+
+
+
+.week_days,
+.row {
+    display: flex;
+}
+.week .row .column-time div {
+    width: 65px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+.week_days .week-empty {
+    width: 85px;
+    height: 25px;
+    border: 1px solid lightgray;
+}
+
+.day .row .column div {
+    border: 1px solid lightgray;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.week .row .column div, 
+.week .row .column .date {
+    width: 127.5px;
+    height: 35px;
+    border: 1px solid lightgray;
+}
+
+.week_days .active-day,
+.row .active {
+    width: 100%;
+}
+
+.week_days div {
+    border: 1px solid lightgray;
+    width: 155px;
+    text-align: center;
+    padding: 2px 0;
+}
+.week_days .day-empty {
+    border: 1px solid lightgray;
+    width: 149px;
+    text-align: center;
+    padding: 2px 0;
+}
+.column .abc {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    height: 25px; 
+    width: 127.5px;
+}
+.d-none {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************** JAVASCRIPT *******************************/
+
+p.event {
+    background-color: dodgerblue;
+    color: white;
+    padding: 3px 8px 3px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: left;
+}
